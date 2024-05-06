@@ -1,0 +1,55 @@
+.about__section{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    background: var(--second-bg-color);
+    width:100%;
+    height:100vh;
+    overflow: auto;
+    color:white;
+
+}
+
+.about__head{
+    color:white;
+    max-width: 1200px;
+    margin: 75px auto;
+}
+.about__head h1{
+    
+    font-size: 2.5rem;
+    font-size: 800;
+}
+.about__head h3{
+    
+    font-size: 1.6rem;
+    font-size: 800;
+}
+.about__head p{
+    padding-top: 30px;
+    word-spacing: 5px;
+    font-size: 1.3rem;
+    font-size: 800;
+}
+.about__head span{
+    color:var(--main-color);
+}
+.about_info{
+    height:45vh;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    line-height: 1.75;
+    word-spacing: 2px;
+    z-index: 0;
+}
+
+
+.scroll_btn{
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: flex-end;
+    
+}

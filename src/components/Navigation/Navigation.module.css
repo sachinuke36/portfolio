@@ -1,0 +1,32 @@
+.navigation{
+    padding: 0 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-color);
+    color: white;
+    height:93px;
+    z-index: 100;
+}
+.navigation ul{
+    list-style: none;
+    display: flex;
+    gap:24px;
+}
+/* .navigation ul a{
+    text-decoration: none;
+    color: white;
+} */
+
+/* .navigation ul li a .home {
+    color: red;
+  } */
+
+  .highlighter{
+    color: var(--main-color);
+  }
+
+.nav_links.active{
+    color: red;
+}
+

@@ -1,8 +1,6 @@
 import styles from "./Navigation.module.css";
 import { Link } from 'react-scroll';
-import { stack as Menu } from 'react-burger-menu';
 import { GiHamburgerMenu } from "react-icons/gi";
-import styled from 'styled-components';
 import { useState } from "react";
 
 

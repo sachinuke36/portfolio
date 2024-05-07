@@ -22,3 +22,41 @@ body{
 .active{
   color:var(--main-color);
 }
+.burger-menu{
+  display: none;
+}
+.display{
+  background: rgb(100, 143, 171);
+  color:rgb(52, 47, 18);
+  height: calc(100vh - 93px);
+  width:30vw;
+  display: flex;
+  align-items: center;
+  gap:10px;
+  /* justify-content: center; */
+  flex-direction: column;
+  position: absolute;
+  top:100%;
+  right:0px;
+  animation: slide 0.5s ease-out forwards ;
+}
+.hide{
+  display: none;
+}
+
+@keyframes slide {
+  0% {
+    width:0;
+  }
+  100% {
+    width:35vw ; /* Adjusted final position */
+  }
+}
+
+@media screen and (max-width: 556px){
+  .burger-menu{
+    display:block;
+    font-size: 2rem;
+  }
+  
+}

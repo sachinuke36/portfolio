@@ -1,5 +1,12 @@
 import styles from "./Navigation.module.css";
 import { Link } from 'react-scroll';
+import { stack as Menu } from 'react-burger-menu';
+import { GiHamburgerMenu } from "react-icons/gi";
+import styled from 'styled-components';
+import { useState } from "react";
+
+
+
 
 interface navLinksItemProps {
   title: string;
@@ -8,6 +15,7 @@ interface navLinksItemProps {
 
 
 const Navigation = () => {
+  const [display, setDisplay] = useState(false)
 
   const navLinks: navLinksItemProps[] = [
     { title: 'Home', href: 'home' },
@@ -15,7 +23,18 @@ const Navigation = () => {
     { title: 'Services', href: 'services' },
     { title: 'Projects', href: 'projects' },
     { title: 'Contact', href: 'contacts' },
-  ]
+  ];
+
+  const handleClick =()=>{
+    // console.log('clicked')
+    setDisplay((prev) => !prev);
+  }
+
+  // class Example extends React.Component {
+  //   showSettings (event) {
+  //     event.preventDefault();
+      
+  //   }
 
   return (
     <>
@@ -24,7 +43,7 @@ const Navigation = () => {
         <h1>Port<span className={`${styles.highlighter}`}>Folio</span></h1>
       </div>
      
-      <ul>
+      <ul className="navlinks1">
         {
           navLinks.map((link, i) => (
             <li key={i}>
@@ -43,13 +62,40 @@ const Navigation = () => {
           ))
         }
       </ul>
-    </nav>
 
+ 
+ <GiHamburgerMenu onClick={ handleClick} className="burger-menu" />
+ <div className= {`${display ? 'display': 'hide'}`} >
+
+ {
+          navLinks.map((link, i) => (
+           
+              <Link
+              key={i}
+                to={link.href}
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                id={`_${link.href}`}
+                // className={`${styles.nav_links}`}
+              >
+                {link.title}
+              </Link>
+            
+          ))
+        }
+</div>
+
+      
+    </nav>
     </>
   )
 }
 
 export default Navigation;
+
+
 
 
 

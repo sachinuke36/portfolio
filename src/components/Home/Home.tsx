@@ -2,10 +2,15 @@ import styled from 'styled-components';
 import styles from './Home.module.css'
 const Home = () => {
 
- 
-
   return (
     <div className={`${styles.container}`} id='home'>
+
+     <div className={`${styles.image}`}>
+            <img src="./images/sachin3.jpg" alt="image-sachin"/>
+      </div>
+
+
+
         <div className={`${styles.home__info}`}>
             <h3>Hello, It's Me</h3>
             <h1>Sachin Uke</h1>
@@ -17,16 +22,14 @@ const Home = () => {
                 <a href="https://twitter.com/sachinuke36?t=IfupBgb0v8AgL4ZgjtWouA&s=08"><i className="bx bxl-twitter"></i></a>
                 <a href="https://www.instagram.com/sachin_uke1?utm_source=qr"><i className="bx bxl-instagram-alt"></i></a>
                 <a href="https://www.linkedin.com/in/sachin-uke-757892259"><i className="bx bxl-linkedin"></i></a>
-          </div>
+            </div>
 
-          <div className={`${styles.cv__btn}`}>
+           <div className={`${styles.cv__btn}`}>
             <Button>Download CV</Button>
-          </div>
+            </div>
 
         </div>
-        <div className={`${styles.image}`}>
-            <img src="./images/sachin3.jpg" alt="image-sachin"/>
-        </div>
+        
         
       
     </div>

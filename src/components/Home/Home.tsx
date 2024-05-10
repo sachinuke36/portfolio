@@ -1,5 +1,9 @@
 import styled from 'styled-components';
-import styles from './Home.module.css'
+import styles from './Home.module.css';
+
+
+
+
 const Home = () => {
 
   return (
@@ -15,7 +19,9 @@ const Home = () => {
             <h3>Hello, It's Me</h3>
             <h1>Sachin Uke</h1>
             <h3>And I'm <span>Full-stack Developer</span></h3>
-            <p>Equipped with HTML5, JS, CSS, React</p>
+           
+
+
 
             <div className={`${styles.socialMedia}`}>
                 <a href="https://www.facebook.com/sachin.uke.165?mibextid=ZbWKwL"> <i className="bx bxl-facebook"></i> </a>

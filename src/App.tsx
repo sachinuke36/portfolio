@@ -1,9 +1,10 @@
 import './App.css'
-import About from './components/About/About'
+// import About from './components/About/About'
 import Home from './components/Home/Home'
 import Navigation from './components/Navigation/Navigation'
 import Projects from './components/Projects/Projects'
-import Services from './components/Services/Services'
+import About2 from './components/About/About2'
+import Experiences from './components/Experieces/Experiences'
 
 function App() {
 
@@ -11,17 +12,9 @@ function App() {
   <div>
     <Navigation/>
       <Home/>
-      <hr/>
-
-     <About/>
-     <hr/>
-     
-      <Services/>
-      <hr/>
-
+      <About2/>
+      <Experiences/>
       <Projects/>
-      <hr/>
-
   </div>
    
   )

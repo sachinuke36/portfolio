@@ -5,11 +5,11 @@ import { useState } from "react";
 
 
 
-
 interface navLinksItemProps {
   title: string;
   href: string;
-}
+} 
+
 
 
 const Navigation = () => {
@@ -18,7 +18,7 @@ const Navigation = () => {
   const navLinks: navLinksItemProps[] = [
     { title: 'Home', href: 'home' },
     { title: 'About', href: 'about' },
-    { title: 'Services', href: 'services' },
+    { title: 'Experience', href: 'experiences' },
     { title: 'Projects', href: 'projects' },
     { title: 'Contact', href: 'contacts' },
   ];
@@ -38,7 +38,7 @@ const Navigation = () => {
     <>
      <nav className={`${styles.navigation} nav`} >
       <div className="logo">
-        <h1>Port<span className={`${styles.highlighter}`}>Folio</span></h1>
+        <h1>Sachin <span className={`${styles.highlighter}`}>Uke</span></h1>
       </div>
      
       <ul className="navlinks1">
@@ -63,9 +63,10 @@ const Navigation = () => {
 
  
  <GiHamburgerMenu onClick={ handleClick} className="burger-menu" />
+
  <div className= {`${display ? 'display': 'hide'}`} >
 
- {
+  {
           navLinks.map((link, i) => (
            
               <Link
@@ -83,7 +84,7 @@ const Navigation = () => {
             
           ))
         }
-</div>
+ </div>
 
       
     </nav>
@@ -93,6 +94,27 @@ const Navigation = () => {
 
 export default Navigation;
 
+
+/* import { motion } from "framer-motion"
+
+const variants = {
+  open: { opacity: 1, x: 0 },
+  closed: { opacity: 0, x: "-100%" },
+}
+
+export const MyComponent = () => {
+  const [isOpen, setIsOpen] = useState(false)
+
+  return (
+    <motion.nav
+      animate={isOpen ? "open" : "closed"}
+      variants={variants}
+    >
+      <Toggle onClick={() => setIsOpen(isOpen => !isOpen)} />
+      <Items />
+    </motion.nav>
+  )
+} */
 
 
 

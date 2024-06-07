@@ -1,7 +1,7 @@
 import './About.css';
 import { FaArrowPointer } from "react-icons/fa6";
 import { IoServer } from "react-icons/io5";
-
+import {motion} from 'framer-motion'
 
 
 const About2 = () => {
@@ -22,8 +22,10 @@ const About2 = () => {
         }
     ]
   return (
-    <div className='about-section-container' id='about'>
-      <div className='about-section-body'>
+    <div
+     className='about-section-container' id='about'>
+      <motion.div 
+      className='about-section-body'>
             <h1>Ab<span>out</span></h1>
             
                 {
@@ -44,7 +46,7 @@ const About2 = () => {
                
            
 
-      </div>
+      </motion.div>
     </div>
   )
 }

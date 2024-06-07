@@ -4,29 +4,40 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { TbBrandJavascript } from "react-icons/tb";
-
+import {motion} from 'framer-motion'
 
 
 const Experiences = () => {
     const internProps =[
-        {company:'Self',
+      {
+        company:'Web Development intern | Encryptix',
+    duration:'May 2024-June 2024',
+    logo:'',
+    description:['Interface for job seekers and employers, Browse, filter jobs, and post job listings.','Apply for jobs and upload resumes,  Review resumes, and manage postings','CRUD operations for job postings and user data','MongoDB for data storage','User authentication and authorization']
+    },
+        {company:'WoodZone | Self Project',
         duration:'April 2024-May 2024',
         logo:'',
-        description:['Used React to build the website.','Stored user data on Firebase']
+        description:['Used React to build the e-commerce site called WoodZone','Fully responsive and intuitively designed website, prioritizing user experience for seamless interaction across all devices','Utilized Firebase to store user data seamlessly and implemented an API-driven approach to fetch addresses based on pin codes, enhancing data accessibility and user convenience']
 
         },{
-            company:'Encryptix',
-        duration:'May 2024-June 2024',
-        logo:'',
-        description:['Used React to build the website.','Stored user data on Firebase']
-            
-
-
-        }
+          company:'Secretary Sports and Games, Weightlifting | Meghnad saha Hall of Residance',
+          duration: 'Aug 2024-April 2024',
+          logo:'',
+          description:['Managed a budget of Rs.50,000','Organised Maitree-2024 where we had 200 competitors from different halls.']
+        },
+        {
+          company:'DIY | Sun Tracking Solar Panel |Term Project | IIT Kharagpur',
+      duration:'Feb 2022-March 2022',
+      logo:'',
+      description:["The Arduino-based system integrates sensors to detect sunlight angles and motors to adjust the solar panel's position accordingly, ensuring efficient energy capture by consistently orienting towards the sun.",'Designed a cost-efficient Arduino circuit using an Arduino Uno, breadboard, servo motor, solar panel, resistors, and jumper wires. This circuit not only detects the position of the sun but also rotates such that light rays fall parallel on the solar panel']
+      },
     ]
   return (
     <div className='experiences-section' id='experiences'>
-      <h1>Exper<span>iences</span> </h1>
+      <h1
+      
+      >Exper<span>iences</span> </h1>
       <div className="experiences-section-content">
         <div className="languages">
         <Flex> 
@@ -51,7 +62,7 @@ const Experiences = () => {
             </Flex> 
            
         </div>
-        <div className="intern">
+        <div className="intern ">
             {
                 internProps.map((item,i)=>(
                     <div key={i} className='intern-item'>

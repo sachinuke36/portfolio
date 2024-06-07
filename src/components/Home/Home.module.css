@@ -22,14 +22,28 @@
     color: var(--main-color);
 }
  .image{
+    position: relative;
     width:450px;
     height:450px;
     border-radius: 50%;
-    border: 2px dashed rgb(22, 191, 177);
+    /* border: 2px solid  rgb(22, 191, 177); */
+    /* border-bottom:2px solid rgb(18, 176, 152); */
     overflow: hidden;
-    animation: move 3s infinite;
+    animation:move 3s infinite linear; 
     
 }
+.image::after{
+    content: ''; /* Add content to make the pseudo-element visible */
+    position: absolute; /* Position the pseudo-element */
+    top: 0px;
+    left: 0px;
+    width: 450px;
+    height: 450px;
+    border-top: 5px dashed rgb(18, 176, 152);
+    border-radius: 50%; /* Make sure the pseudo-element border is circular */
+   animation: rotate 3s infinite linear;
+}
+
 
 .image img{
    overflow: none;
@@ -72,6 +86,16 @@
     }
     100%{
         transform: translateY(-0px);
+       
+    }
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
     }
 }
 
@@ -95,10 +119,23 @@
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        border: 2px dashed rgb(22, 191, 177);
-        overflow: hidden;
-        
+        /* border: 2px dashed rgb(22, 191, 177); */
+        overflow: hidden; 
     }
+    .image::after{
+        content: ''; /* Add content to make the pseudo-element visible */
+        position: absolute; /* Position the pseudo-element */
+        top: 0px;
+        left: 0px;
+        width: 400px;
+        height: 400px;
+        border-top: 5px dashed rgb(18, 176, 152);
+        border-radius: 50%; /* Make sure the pseudo-element border is circular */
+       animation: rotate 3s infinite linear;
+    }
+
+
+
     .home__info{
         display: flex;
         flex-direction: column;
@@ -126,10 +163,22 @@
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        border: 2px dashed rgb(22, 191, 177);
-        overflow: hidden;
-        
+        /* border: 2px dashed rgb(22, 191, 177); */
+        overflow: hidden; 
     }
+    .image::after{
+        content: ''; /* Add content to make the pseudo-element visible */
+        position: absolute; /* Position the pseudo-element */
+        top: 0px;
+        left: 0px;
+        width: 330px;
+        height: 330px;
+        border-top: 5px dashed rgb(18, 176, 152);
+        border-radius: 50%; /* Make sure the pseudo-element border is circular */
+       animation: rotate 3s infinite linear;
+    }
+
+
     .home__info{
         display: flex;
         flex-direction: column;
@@ -158,6 +207,18 @@
         width:300px;
         height:300px;
     }
+
+    .image::after{
+        content: ''; /* Add content to make the pseudo-element visible */
+        position: absolute; /* Position the pseudo-element */
+        top: 0px;
+        left: 0px;
+        width: 300px;
+        height: 300px;
+        border-top: 5px dashed rgb(18, 176, 152);
+        border-radius: 50%; /* Make sure the pseudo-element border is circular */
+       animation: rotate 3s infinite linear;
+    }
     
 
   }
@@ -179,6 +240,18 @@
     .image{
         width:280px;
         height:280px;
+    }
+
+    .image::after{
+        content: ''; /* Add content to make the pseudo-element visible */
+        position: absolute; /* Position the pseudo-element */
+        top: 0px;
+        left: 0px;
+        width: 280px;
+        height: 280px;
+        border-top: 5px dashed rgb(18, 176, 152);
+        border-radius: 50%; /* Make sure the pseudo-element border is circular */
+       animation: rotate 3s infinite linear;
     }
 
   }

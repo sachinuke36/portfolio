@@ -4,7 +4,6 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { TbBrandJavascript } from "react-icons/tb";
-import {motion} from 'framer-motion'
 
 
 const Experiences = () => {

@@ -5,6 +5,7 @@ import Navigation from './components/Navigation/Navigation'
 import Projects from './components/Projects/Projects'
 import About2 from './components/About/About2'
 import Experiences from './components/Experieces/Experiences'
+import Contact from './components/contact/Contact'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <About2/>
       <Experiences/>
       <Projects/>
+      <Contact/>
   </div>
    
   )

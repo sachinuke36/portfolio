@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.flex{
+    display: flex;
+   flex-wrap: wrap;
+   gap: 5px;
+}
+.projects{
+    overflow-y: scroll;
+    height: 70vh;
+    /* border: 1px solid red; */
+}
+@media (max-width:760px) {
+    .flex{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

@@ -20,7 +20,7 @@ const Navigation = () => {
     { title: 'About', href: 'about' },
     { title: 'Experience', href: 'experiences' },
     { title: 'Projects', href: 'projects' },
-    { title: 'Contact', href: 'contacts' },
+    { title: 'Contact', href: 'contact' },
   ];
 
   const handleClick =()=>{

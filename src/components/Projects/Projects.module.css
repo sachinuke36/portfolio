@@ -1,12 +1,16 @@
 .projects__container{
     color: white;
     background: var(--second-bg-color);
-    width: 100%;
     height: 100vh;
+    padding: 10px;
 }
 .projects__container h1{
     padding: 74px;
 }
 .projects__container h1 span{
     color: var(--main-color);
+}
+.projects__container div{
+    margin: 0 auto;
+    
 }

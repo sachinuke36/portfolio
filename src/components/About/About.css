@@ -59,7 +59,7 @@
 @media (max-width:457px) {
     .about-section-body{
         background: var(--bg-color);
-        width: 100%;
+        width: 92%;
         /* margin-top: 13px; */
         padding:7px;
         border-radius: 15px;

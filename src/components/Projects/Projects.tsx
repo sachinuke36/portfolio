@@ -4,12 +4,12 @@ import styles from './Projects.module.css'
 const Projects = () => {
   const projects = [
     {
-      image:'./images/jobdekho-home.png',
+      image:"./images/jobdekho-home.png",
       github:'https://github.com/sachinuke36/Encryptix_Projects.git',
       live:'https://jobdekho-jobseeker.netlify.app/',
       title:'JobDekho-for jobseekers'
     },{
-      image:'./images/jobdekho-for-employer.png',
+      image:"./images/jobdekho-for-employer.png",
       github:'https://github.com/sachinuke36/Encryptix_Projects.git',
       live:'https://jobdekho-employer.netlify.app/',
       title:'JobDekho-for employer'

@@ -5,6 +5,7 @@
     gap:60px;
     color: white;
     background: var(--bg-color);
+    margin-top: 0px;
     width:100%;
     height: calc(100vh + 93px);
 }
@@ -41,7 +42,7 @@
     height: 450px;
     border-top: 5px dashed rgb(18, 176, 152);
     border-radius: 50%; /* Make sure the pseudo-element border is circular */
-   animation: rotate 3s infinite linear;
+   animation: rotate 5s infinite linear;
 }
 
 
@@ -131,7 +132,7 @@
         height: 400px;
         border-top: 5px dashed rgb(18, 176, 152);
         border-radius: 50%; /* Make sure the pseudo-element border is circular */
-       animation: rotate 3s infinite linear;
+       animation: rotate 5s infinite linear;
     }
 
 
@@ -175,7 +176,7 @@
         height: 330px;
         border-top: 5px dashed rgb(18, 176, 152);
         border-radius: 50%; /* Make sure the pseudo-element border is circular */
-       animation: rotate 3s infinite linear;
+       animation: rotate 5s infinite linear;
     }
 
 
@@ -217,13 +218,24 @@
         height: 300px;
         border-top: 5px dashed rgb(18, 176, 152);
         border-radius: 50%; /* Make sure the pseudo-element border is circular */
-       animation: rotate 3s infinite linear;
+       animation: rotate 5s infinite linear;
     }
     
 
   }
 
   @media screen and (max-width: 367px) {
+    .container{
+        /* display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap:60px;
+        color: white;
+        background: var(--bg-color);
+        margin-top: 0px;
+        width:100%; */
+        height: calc(100vh + 30px);
+    }
     
     .home__info h3{ 
         font-size: 1.2rem;
@@ -251,7 +263,7 @@
         height: 280px;
         border-top: 5px dashed rgb(18, 176, 152);
         border-radius: 50%; /* Make sure the pseudo-element border is circular */
-       animation: rotate 3s infinite linear;
+       animation: rotate 5s infinite linear;
     }
 
   }

@@ -8,7 +8,6 @@
 .about-section-body{
     background: var(--bg-color);
     width: 80%;
-    /* margin-top: 13px; */
     padding:73px;
     border-radius: 15px;
    
@@ -20,7 +19,7 @@
     color:white;
     text-transform: uppercase;
     font-weight:700;
-    font-size: 35px;
+    font-size: 40px;
     letter-spacing: 1.75px;
 }
 .about-section-content{
@@ -60,8 +59,8 @@
     .about-section-body{
         background: var(--bg-color);
         width: 92%;
-        /* margin-top: 13px; */
         padding:7px;
         border-radius: 15px;
+        font-size: 14px;
     }
 }

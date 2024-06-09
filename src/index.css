@@ -2,15 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 .flex{
     display: flex;
    flex-wrap: wrap;
    gap: 5px;
+   
 }
 .projects{
     overflow-y: scroll;
     height: 50vh;
     padding: 10px 10px;
+    
+    
 }
 @media (max-width:760px) {
     .flex{

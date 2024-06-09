@@ -19,6 +19,8 @@
    /* background-color: var(--bg-color); */
    /* background-color: rgb(83, 106, 142); */
    color: white;
+
+   
 }
 .card .image{
     height: 180px;
@@ -28,6 +30,8 @@
     1px 1px 5px rgba(0, 0, 0, 0.9), 
     2px 2px 10px rgba(0, 0, 0, 0.1), 
     3px 3px 15px rgba(0, 0, 0, 0.01); 
+
+    
     
 }
 .card .image img{

@@ -12,6 +12,7 @@ color:aqua;
 }
 .experiences-section-content{
     display: flex;
+    flex-direction: column;
     padding: 30px;
 }
 .experiences-section-content .languages{
@@ -19,13 +20,12 @@ color:aqua;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid white; */
     margin-top: 60px;
-    width: 20%;
-    margin-right: 10%;  
+    width: 100%;
+    margin-right: 10px;  
 }
 .experiences-section-content .languages .language-item{
-    margin: 5px;
+    margin: 2px;
     transition: transform 0.3s; /* Moved the transition here */
 }
 .experiences-section-content .languages .language-item:hover{

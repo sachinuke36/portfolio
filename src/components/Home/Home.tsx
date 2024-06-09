@@ -43,12 +43,12 @@ const Home = () => {
                 <a href="https://www.linkedin.com/in/sachin-uke-757892259"><i className="bx bxl-linkedin"></i></a>
             </motion.div>
 
-           <motion.div 
-           whileInView={{scale:[0, 1]}}
-           transition={{delay:0.8}}
+           <div
            className={`${styles.cv__btn}`}>
-            <Button>Download CV</Button>
-            </motion.div>
+            <Button 
+            whileTap={{scale:0.95, rotate:'2.5deg'}}
+            >Download CV</Button>
+            </div>
 
         </div>
         
@@ -60,7 +60,7 @@ const Home = () => {
 
 export default Home;
 
-export const Button = styled.button`
+export const Button = styled(motion.button)`
    width:220px;
     height:40px;
     border-radius: 40px;

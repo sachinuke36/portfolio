@@ -9,8 +9,9 @@
    border-radius: 10px;
    /* border: 1px solid rgb(219, 236, 229); */
    /* border: none; */
-   background-color: rgb(250, 250, 250);
-   color: black;
+   background-color: var(--bg-color);
+   /* background-color: rgb(83, 106, 142); */
+   color: white;
 }
 .card .image{
     height: 180px;
@@ -33,7 +34,7 @@
     color: white;
     padding:10px;
     border-radius: 30px;
-    background-color: rgb(28, 55, 53);
+    background-color: rgb(54, 67, 67);
 }
 
 @media (max-width:382px) {

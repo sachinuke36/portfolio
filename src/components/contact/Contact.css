@@ -3,10 +3,16 @@
     height: 100vh;
     background-color: var(--second-bg-color);
     color: white;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.9),
+    3px 3px 2px rgba(0, 0, 0, 0.4),
+    1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .contact-page form h1{
     text-align: center;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.9),
+    3px 3px 2px rgba(0, 0, 0, 0.4),
+    1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 .contact-page h1 span{
    color: aqua;
@@ -35,6 +41,11 @@
     width: 85%;
     padding: 10px;
     outline: none;
+    border-radius: 5px;
+    box-shadow: 
+    1px 1px 5px rgba(0, 0, 0, 0.9), 
+    2px 2px 10px rgba(0, 0, 0, 0.1), 
+    3px 3px 15px rgba(0, 0, 0, 0.01);
     
 }
 .contact-form textarea{
@@ -42,6 +53,11 @@
     padding: 10px;
     max-height: 10vh;
     outline: none;
+    border-radius: 10px;
+    box-shadow: 
+    1px 1px 5px rgba(0, 0, 0, 0.9), 
+    2px 2px 10px rgba(0, 0, 0, 0.1), 
+    3px 3px 15px rgba(0, 0, 0, 0.01);
     
 }
 .flex-col{

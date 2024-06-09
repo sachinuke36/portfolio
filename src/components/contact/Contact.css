@@ -60,4 +60,8 @@
    outline: none;
    border: none;
    border-radius: 10px;
+   box-shadow: 
+   1px 1px 5px rgba(0, 0, 0, 0.9), 
+   2px 2px 10px rgba(0, 0, 0, 0.3), 
+   3px 3px 15px rgba(0, 0, 0, 0.2);
 }

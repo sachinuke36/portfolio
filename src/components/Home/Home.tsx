@@ -64,10 +64,16 @@ export const Button = styled(motion.button)`
    width:220px;
     height:40px;
     border-radius: 40px;
-    background: var(--main-color);
-    color: var(--bg-color);
+    /* background: var(--main-color); */
+    background: transparent;
+    /* color: var(--bg-color); */
+    color:aqua;
     font-size: 1.2rem;
     font-weight: 800;
+    box-shadow: 
+    1px 1px 5px rgba(0, 0, 0, 0.9), 
+    2px 2px 10px rgba(0, 0, 0, 0.3), 
+    3px 3px 15px rgba(0, 0, 0, 0.2);
     border: none;
     cursor: pointer;
 `;

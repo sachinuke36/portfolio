@@ -5,7 +5,7 @@
     color: white;
 }
 
-.contact-page h1{
+.contact-page form h1{
     text-align: center;
 }
 .contact-page h1 span{
@@ -15,9 +15,13 @@
     width: 90%;
     height: 70vh;
     justify-content: space-evenly;
-    margin: 10px auto;
+    margin: 0px auto;
     padding: 10px 2px;
-    border: 1px solid rgb(110, 108, 108);
+    box-shadow: 
+    1px 1px 5px rgba(0, 0, 0, 0.9), 
+    2px 2px 10px rgba(0, 0, 0, 0.3), 
+    3px 3px 15px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;

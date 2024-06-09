@@ -3,8 +3,9 @@ import './Contact.css'
 const Contact = () => {
   return (
     <div className='contact-page' id='contact'>
-      <h1>Contact <span> Me</span></h1>
+      
       <form  className='contact-form'>
+      <h1>Contact <span> Me</span></h1>
         <div className="name flex-col">
             <label htmlFor="Name">Name</label>
             <input type="text" name="name"/>

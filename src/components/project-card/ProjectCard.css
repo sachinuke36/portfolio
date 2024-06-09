@@ -9,7 +9,11 @@
    border-radius: 10px;
    /* border: 1px solid rgb(219, 236, 229); */
    /* border: none; */
-   background-color: var(--bg-color);
+   box-shadow: 
+   1px 1px 5px rgba(0, 0, 0, 0.9), 
+   2px 2px 10px rgba(0, 0, 0, 0.3), 
+   3px 3px 15px rgba(0, 0, 0, 0.2); 
+   /* background-color: var(--bg-color); */
    /* background-color: rgb(83, 106, 142); */
    color: white;
 }
@@ -34,7 +38,15 @@
     color: white;
     padding:10px;
     border-radius: 30px;
-    background-color: rgb(54, 67, 67);
+    background-color:transparent;
+    box-shadow: 
+    inset 3px 3px 15px rgba(0, 0, 0, 0.1), 
+    inset 2px 2px 10px rgba(0, 0, 0, 0.3), 
+    inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 
+   3px 3px 15px rgba(0, 0, 0, 0.1), 
+   2px 2px 10px rgba(0, 0, 0, 0.3), 
+   1px 1px 5px rgba(0, 0, 0, 0.5);  */
 }
 
 @media (max-width:382px) {

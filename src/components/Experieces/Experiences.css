@@ -1,6 +1,6 @@
 .experiences-section{
     background: var(--second-bg-color);
-    padding:74px;
+    padding:4px;
     height: 100vh;
    
 }
@@ -13,6 +13,7 @@ color:aqua;
 .experiences-section-content{
     display: flex;
     flex-direction: column;
+    gap: 12px;
     padding: 30px;
 }
 .experiences-section-content .languages{
@@ -21,28 +22,40 @@ color:aqua;
     align-items: center;
     justify-content: center;
     margin-top: 60px;
-    width: 100%;
-    margin-right: 10px;  
+    /* width: 100%; */
+    margin-right: 10px; 
 }
 .experiences-section-content .languages .language-item{
     margin: 2px;
+    box-shadow: 
+    inset 3px 3px 15px rgba(0, 0, 0, 0.1), 
+    inset 2px 2px 10px rgba(0, 0, 0, 0.3), 
+    inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+    /* border: 1px solid aqua; */
+    border-radius: 50%;
+    padding: 8px;
     transition: transform 0.3s; /* Moved the transition here */
 }
 .experiences-section-content .languages .language-item:hover{
     transform: scale(1.5); /* Scale up by 1.2 when hovered */
 }
 .intern{
-    width: 70%;
+    /* width: 100%; */
     display: flex;
     flex-wrap: wrap;
     height: 70vh;
     overflow-y: scroll;
-    /* border:1px solid white; */
+    border:1px solid rgb(28, 40, 40);
+    box-shadow: 
+        1px 1px 5px rgba(0, 0, 0, 0.9), 
+        2cap 2px 10px rgba(0, 0, 0, 0.3), 
+        3px 3px 15px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px;
 }
 .intern-item{
     /* border: 1px solid white; */
     margin: 20px;
-    width:100%;
+    /* width:100%; */
     padding: 10px;
     background-image:linear-gradient(
         90deg,
@@ -64,10 +77,8 @@ color:white;
     color:white;
 }
 .intern-company-info{
-    font-size: 18px;
+    font-size: 16px;
     color:rgb(210, 205, 205);
-   
-
 }
 @media (max-width:581px) {
     .experiences-section{
@@ -84,12 +95,12 @@ color:white;
     .experiences-section-content .languages{
         display: flex;
         flex-wrap: wrap;
-        min-width: 100%;
+        /* min-width: 100%; */
         margin-right: 5%;  
 
     }
     .intern{
-        width: 100%;
+        /* width: 100%; */
         display: flex;
         flex-wrap: wrap;
         max-height: 50vh;
@@ -112,16 +123,23 @@ color:white;
     .experiences-section-content .languages{
         display: flex;
         flex-wrap: wrap;
-        min-width: 100%;
+        /* min-width: 100%; */
 
     }
     .intern{
-        width: 100%;
+        width: 90%;
         display: flex;
         margin: 0 auto;
         flex-wrap: wrap;
         max-height: 50vh;
         overflow-y: scroll;
         font-size: 14px;
+    }
+    .company-title{
+        font-size: 18px;
+    }
+    .intern-company-info{
+        font-size: 14px;
+        color:rgb(210, 205, 205);
     }
 }

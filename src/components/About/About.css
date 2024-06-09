@@ -1,12 +1,12 @@
 .about-section-container{
     background-color:var(--second-bg-color);
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
 }
 .about-section-body{
-    background: var(--bg-color);
+    background: transparent;
     width: 80%;
     padding:73px;
     border-radius: 15px;
@@ -19,8 +19,7 @@
     color:white;
     text-transform: uppercase;
     font-weight:700;
-    font-size: 40px;
-    letter-spacing: 1.75px;
+    font-size: 30px;
 }
 .about-section-content{
     display: flex;
@@ -57,7 +56,6 @@
 
 @media (max-width:457px) {
     .about-section-body{
-        background: var(--bg-color);
         width: 92%;
         padding:7px;
         border-radius: 15px;

@@ -10,7 +10,7 @@
 .projects{
     overflow-y: scroll;
     height: 70vh;
-    /* border: 1px solid red; */
+    padding: 10px 10px;
 }
 @media (max-width:760px) {
     .flex{

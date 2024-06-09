@@ -65,9 +65,7 @@ export const Button = styled(motion.button)`
    width:220px;
     height:40px;
     border-radius: 40px;
-    /* background: var(--main-color); */
     background: transparent;
-    /* color: var(--bg-color); */
     color:aqua;
     font-size: 1.2rem;
     font-weight: 800;
@@ -77,4 +75,5 @@ export const Button = styled(motion.button)`
     3px 3px 15px rgba(0, 0, 0, 0.2);
     border: none;
     cursor: pointer;
+    
 `;

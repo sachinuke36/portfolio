@@ -9,7 +9,7 @@
 }
 .projects{
     overflow-y: scroll;
-    height: 70vh;
+    height: 50vh;
     padding: 10px 10px;
 }
 @media (max-width:760px) {

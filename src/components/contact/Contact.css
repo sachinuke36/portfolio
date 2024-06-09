@@ -48,6 +48,12 @@
     3px 3px 15px rgba(0, 0, 0, 0.01);
     
 }
+.contact-form input:focus{    
+    outline: 1px solid aqua; 
+}
+.contact-form textarea:focus{    
+    outline: 1px solid aqua; 
+}
 .contact-form textarea{
     width: 85%;
     padding: 10px;

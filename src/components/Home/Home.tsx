@@ -43,12 +43,13 @@ const Home = () => {
                 <a href="https://www.linkedin.com/in/sachin-uke-757892259"><i className="bx bxl-linkedin"></i></a>
             </motion.div>
 
-           <div
+           <a
+           href='https://drive.google.com/file/d/16x9BP78DPDOM2cCKqeIdgw0VKmltwvo8/view?usp=drive_link' 
+           download
            className={`${styles.cv__btn}`}>
-            <Button 
-            whileTap={{scale:0.95, rotate:'2.5deg'}}
-            >Download CV</Button>
-            </div>
+            <Button
+            whileTap={{scale:0.95, rotate:'2.5deg'}}>Download CV </Button>
+            </a>
 
         </div>
         

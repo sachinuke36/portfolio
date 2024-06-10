@@ -1,7 +1,7 @@
 import ProjectCard from '../project-card/ProjectCard'
 import styles from './Projects.module.css'
 
-const Projects = () => {
+const Projects = ({ setDisplay }: { setDisplay: React.Dispatch<React.SetStateAction<boolean>> }) => {
   const projects = [
     {
       image:"./images/jobdekho-home.png",
@@ -16,7 +16,7 @@ const Projects = () => {
     }
   ]
   return (
-    <div className={styles.projects__container} id='projects'>
+    <div className={styles.projects__container} id='projects' onClick={()=>setDisplay(false)}>
       <h1 className='heading'>Proj<span>ects</span></h1>
         <div className="projects flex">
           {

@@ -1,8 +1,8 @@
 import './Contact.css'
 
-const Contact = () => {
+const Contact = ({ setDisplay }: { setDisplay: React.Dispatch<React.SetStateAction<boolean>> }) => {
   return (
-    <div className='contact-page' id='contact'>
+    <div className='contact-page' id='contact' onClick={()=>setDisplay(false)}>
       
       <form  className='contact-form'>
       <h1>Contact <span> Me</span></h1>

@@ -6,7 +6,7 @@ import { FaCss3Alt } from "react-icons/fa";
 import { TbBrandJavascript } from "react-icons/tb";
 
 
-const Experiences = () => {
+const Experiences = ({ setDisplay }: { setDisplay: React.Dispatch<React.SetStateAction<boolean>> }) => {
     const internProps =[
       {
         company:'Web Development intern | Encryptix',
@@ -33,7 +33,7 @@ const Experiences = () => {
       },
     ]
   return (
-    <div className='experiences-section' id='experiences'>
+    <div className='experiences-section' id='experiences' onClick={()=>setDisplay(false)}>
       <h1
       
       >Exper<span>iences</span> </h1>

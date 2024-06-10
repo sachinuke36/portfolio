@@ -1,7 +1,9 @@
 import styles from "./Navigation.module.css";
 import { Link } from 'react-scroll';
 import { GiHamburgerMenu } from "react-icons/gi";
-import { useState } from "react";
+import { RxCross1 } from "react-icons/rx";
+
+// import { useState } from "react";
 
 
 
@@ -10,10 +12,13 @@ interface navLinksItemProps {
   href: string;
 } 
 
+interface NavigationProps {
+  display: boolean;
+  setDisplay: React.Dispatch<React.SetStateAction<boolean>>;
+}
 
 
-const Navigation = () => {
-  const [display, setDisplay] = useState(false)
+const Navigation: React.FC<NavigationProps> = ({ display, setDisplay }) => {
 
   const navLinks: navLinksItemProps[] = [
     { title: 'Home', href: 'home' },
@@ -24,15 +29,10 @@ const Navigation = () => {
   ];
 
   const handleClick =()=>{
-    // console.log('clicked')
     setDisplay((prev) => !prev);
   }
 
-  // class Example extends React.Component {
-  //   showSettings (event) {
-  //     event.preventDefault();
-      
-  //   }
+  
 
   return (
     <>
@@ -61,8 +61,11 @@ const Navigation = () => {
         }
       </ul>
 
+ {
+  display ? <RxCross1 onClick={handleClick} style={{fontSize: '30px'}}/> : <GiHamburgerMenu onClick={ handleClick} className="burger-menu" />
+ }
  
- <GiHamburgerMenu onClick={ handleClick} className="burger-menu" />
+
 
  <div className= {`${display ? 'display': 'hide'}`} >
 

@@ -6,17 +6,18 @@ import Projects from './components/Projects/Projects'
 import About2 from './components/About/About2'
 import Experiences from './components/Experieces/Experiences'
 import Contact from './components/contact/Contact'
-
+import { useState } from 'react'
 function App() {
+  const [display, setDisplay] = useState(false)
 
   return (
   <div>
-    <Navigation/>
-      <Home/>
-      <About2/>
-      <Experiences/>
-      <Projects/>
-      <Contact/>
+    <Navigation display={display} setDisplay={setDisplay}/>
+      <Home setDisplay={setDisplay} />
+      <About2 setDisplay={setDisplay}/>
+      <Experiences setDisplay={setDisplay}/>
+      <Projects setDisplay={setDisplay}/>
+      <Contact setDisplay={setDisplay}/>
   </div>
    
   )

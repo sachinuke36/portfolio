@@ -4,7 +4,7 @@ import { IoServer } from "react-icons/io5";
 import {motion} from 'framer-motion'
 
 
-const About2 = () => {
+const About2 = ({ setDisplay }: { setDisplay: React.Dispatch<React.SetStateAction<boolean>> }) => {
     const aboutSectionProps = [
         {
             comp:<FaArrowPointer fontSize={'30px'} />,
@@ -23,7 +23,7 @@ const About2 = () => {
     ]
   return (
     <div
-     className='about-section-container' id='about'>
+     className='about-section-container' id='about' onClick={()=>setDisplay(false)}>
       <motion.div 
       className='about-section-body'>
             <h1>Ab<span>out</span></h1>

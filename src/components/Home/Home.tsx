@@ -4,10 +4,10 @@ import {motion} from 'framer-motion'
 
 
 
-const Home = () => {
+const Home = ({ setDisplay }: { setDisplay: React.Dispatch<React.SetStateAction<boolean>> }) => {
 
   return (
-    <div className={`${styles.container}`} id='home'>
+    <div className={`${styles.container}`} onClick={()=>setDisplay(false)} id='home'>
 
      <div className={`${styles.image}`}>
             <motion.img

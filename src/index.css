@@ -14,8 +14,10 @@
     overflow-y: scroll;
     height: 50vh;
     padding: 10px 10px;
-    
-    
+}
+.toast-container{
+    text-shadow: none;
+    box-shadow: none;
 }
 @media (max-width:760px) {
     .flex{

@@ -30,6 +30,13 @@ const Contact = ({ setDisplay }: { setDisplay: React.Dispatch<React.SetStateActi
   })
   .then(async (response) => {
       let json = await response.json();
+      setInputs({
+        name:'',
+        email:'',
+        phone:'',
+        message:'',
+        access_key:'3ca837a8-1884-47cf-a574-078d40d77945'
+      })
       if (response.status == 200) {
           toast.success(json.message);
       } else {
@@ -38,6 +45,13 @@ const Contact = ({ setDisplay }: { setDisplay: React.Dispatch<React.SetStateActi
   })
   .catch(error => {
      toast.error(error.message);
+     setInputs({
+      name:'',
+      email:'',
+      phone:'',
+      message:'',
+      access_key:'3ca837a8-1884-47cf-a574-078d40d77945'
+    })
   })
   
 

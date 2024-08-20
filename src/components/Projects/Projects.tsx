@@ -13,6 +13,12 @@ const Projects = ({ setDisplay }: { setDisplay: React.Dispatch<React.SetStateAct
       github:'https://github.com/sachinuke36/Encryptix_Projects.git',
       live:'https://jobdekho-employer.netlify.app/',
       title:'JobDekho-for employer'
+    },
+    {
+      image:"./images/woodzone.png",
+      github:'https://github.com/sachinuke36/woodZone.git',
+      live:'https://wood-zone.vercel.app/',
+      title:'WoodZone'
     }
   ]
   return (

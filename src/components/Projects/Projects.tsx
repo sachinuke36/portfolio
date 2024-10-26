@@ -19,6 +19,12 @@ const Projects = ({ setDisplay }: { setDisplay: React.Dispatch<React.SetStateAct
       github:'https://github.com/sachinuke36/woodZone.git',
       live:'https://wood-zone.vercel.app/',
       title:'WoodZone'
+    },
+    {
+      image:"./images/foodyZone.png",
+      github:'https://github.com/sachinuke36/foodyZone.git',
+      live:'https://foody-zone-one.vercel.app/',
+      title:'foodyZone'
     }
   ]
   return (

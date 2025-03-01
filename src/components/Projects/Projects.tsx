@@ -4,6 +4,12 @@ import styles from './Projects.module.css'
 const Projects = ({ setDisplay }: { setDisplay: React.Dispatch<React.SetStateAction<boolean>> }) => {
   const projects = [
     {
+      image:"./images/pern-chat.png",
+      github:'https://github.com/sachinuke36/connect.git',
+      live:'https://connect-chat-app-pern.netlify.app/',
+      title:'connect-chat-app'
+    },
+    {
       image:"./images/foodyZone.png",
       github:'https://github.com/sachinuke36/foodyZone.git',
       live:'https://foody-zone-one.vercel.app/',
@@ -25,12 +31,7 @@ const Projects = ({ setDisplay }: { setDisplay: React.Dispatch<React.SetStateAct
       github:'https://github.com/sachinuke36/woodZone.git',
       live:'https://wood-zone.vercel.app/',
       title:'WoodZone'
-    },{
-      image:"./images/pern-chat.png",
-      github:'https://github.com/sachinuke36/connect.git',
-      live:'https://connect-chat-app-pern.netlify.app/',
-      title:'connect-chat-app'
-    }
+    },
   ]
   return (
     <div className={styles.projects__container} id='projects' onClick={()=>setDisplay(false)}>

@@ -44,7 +44,7 @@ const Home = ({ setDisplay }: { setDisplay: React.Dispatch<React.SetStateAction<
             </motion.div>
 
            <a
-           href='https://drive.google.com/file/d/1bHR4s1xHLQVDViItW04hJMy4dwvLPedQ/view?usp=drivesdk' 
+           href="https://drive.google.com/drive/folders/1jt5n7UZE6-CzEm5pxCHR2WDg0xY7GKcX" 
            download
            className={`${styles.cv__btn}`}>
             <Button

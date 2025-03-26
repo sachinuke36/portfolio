@@ -19,7 +19,6 @@ function App() {
       <Projects setDisplay={setDisplay}/>
       <Contact setDisplay={setDisplay}/>
   </div>
-   
   )
 }
 
